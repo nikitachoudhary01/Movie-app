@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="img/filmico.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Movie page</title>
+    </head>
+    <body>
+        <header>
+            <form id="form">
+                <div class="search-container">
+                    <input type="text" placeholder="Search" id="search" class="search"/>
+                    <button type="submit" class="search-btn"></button>
+                    <button type="button" class="mic-btn" id="mic-btn"><i class="fas fa-microphone"></i></button>
+                </div>
+            </form>
+            <!-- </nav> -->
+        </header>
+        <div id="tags"></div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content" id="overlay-content"></div>
+            <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
+            <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+        </div>
+        <main id="main"></main>
+        <div class="pagination">
+            <div class="page" id="prev">&#8656; Prev</div>
+            <div class="current" id="current">1</div>
+            <div class="page" id="next">Next &#8658;</div>
+        </div>
+        <div id="watchlist-section">
+  <h2>My Watchlist</h2>
+  <div id="watchlist"></div>
+</div>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/f7a442f79b.js" crossorigin="anonymous"></script>
+    </body>
+</html>
